@@ -7,7 +7,13 @@ app.use(express.json());
 let courses = [
   { id: 1, name: "C1" },
   { id: 2, name: "C2" },
-  { id: 3, name: "C3" }
+  { id: 3, name: "C3" },
+  { id: 1, name: "C1" },
+  { id: 2, name: "C2" },
+  { id: 3, name: "C3" },
+  { id: 1, name: "C1" },
+  { id: 2, name: "C2" },
+  { id: 3, name: "C3" },
 ];
 
 app.get("/", function(req, res) {
@@ -42,7 +48,7 @@ app.post("/api/courses", function(req, res) {
 });
 
 // const port = process.env.PORT || 3000;
-app.listen(5500, () => {
+app.listen(3000, () => {
   console.log("listening");
 });
 
